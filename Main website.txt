@@ -1,0 +1,6 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title><img src="Logo.jpg">NIT Hamirpur</title>
+</head>
+</html>
