@@ -15,7 +15,13 @@
   <title>NITH</title>
 </head>
 <style media="screen">
+.grid {
+display: grid;
+grid-template-columns: 20rem 20rem 20rem;
+grid-template-rows: 300px;
+grid-gap: 1rem;
 
+}
 </style>
 <body style="background-image: url(./images/gate.jpg); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
   <!-- Image and text -->
@@ -29,10 +35,11 @@
 <option value="HOME">Home</option>
 <option value="GALLERY">Gallery</option>
 <option value="NEWS">News</option>
-</select> 
+</select>
   </nav>
 </div>
 <br/><br/><br/>
+<div class="grid">
 <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
 
   <div class="card-header">QUICK LINKS</div>
@@ -40,6 +47,13 @@
     <h4 class="card-title">NIT Intranet <br/> Admission Desk <br/>Annual Reports <br/>Anti-ragging</h4>
     <p class="card-text"></p>
   </div>
+</div>
+<div>
+<img src="./images/logo.jpg">
+</div>
+<div>
+  <img src="./images/gate.jpg" style="height:18rem;width:20rem;">
+</div>
 </div>
 <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
   <div class="card-header">HIGHLIGHTS</div>
@@ -76,6 +90,6 @@
 
   </div>
 </div>
-</div>                                      
+</div>
 </body>
 </html>
