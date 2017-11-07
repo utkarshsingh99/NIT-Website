@@ -68,7 +68,7 @@ body {font-family: Verdana,sans-serif;margin:0}
   background-color: white;
 }
 
-/* Fading animation */
+                                                                                  /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 3s;
@@ -86,7 +86,7 @@ body {font-family: Verdana,sans-serif;margin:0}
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
+                                                                                /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 </style>
@@ -94,18 +94,32 @@ body {font-family: Verdana,sans-serif;margin:0}
 <body style="background-color: rgb(50,50,50); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
 <!--Navigation Bar begins-->
   <div class="row-md-4">
-  <nav class="navbar navbar-light" style="width:100%; z-index:1; position : fixed; background-color : rgb(0,0,0);">
+  <nav class="navbar navbar-expand-lg navbar-light" style="width:100%; z-index:1; position : fixed; background-color : rgb(0,0,0);">
+    <div class="col-md-7">
     <a class="navbar-brand" href="#" style="color:white;">
       <img src="images/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-      National Institute of Technology, Hamirpur
+      National Institute of Technology, Hamirpur                                                                    <!--/*Only the name of Institute till here*/-->
     </a>
-                                                                                          <!--/*A drop down menu*/-->
-<select class="bg-warning" style="width:75px;border:0px;">
-<option value="HOME">Home</option>
-<option value="GALLERY">Gallery</option>
-<option value="NEWS">News</option>
-</select>
-  </nav>
+    </div>
+    <div class="col-md-3">
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#" style="color: white;">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#" style="color: white;">Academics</a>
+      <a class="nav-item nav-link" href="#" style="color: white;">Contacts</a>
+      <a class="nav-item nav-link disabled" href="#" style="color: white;">Sign in</a>                              <!--/*Navigation menu displayed*/-->
+      </div>
+      </div>
+      </div>
+      <div class="col-md-2">
+      <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" style="width: 130px;" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" style="width:78px;">Search</button>        <!--/*Search bar displayed*/-->
+  </form>
+      </div>
+    </div>
+  </div>                                                                                   <!--/*A drop down menu*/-->
+</nav>
 </div>
                                                                                           <!--/*End of Navigation bar*/-->
 <br/><br/>
@@ -157,49 +171,62 @@ body {font-family: Verdana,sans-serif;margin:0}
 </div>
 </br>
 
-<div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+<div class="container-fluid row">
 
+<div class="col-md-3">
+
+<div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
   <div class="card-header">QUICK LINKS</div>
   <div class="card-body">
     <h4 class="card-title">NIT Intranet <br/> Admission Desk <br/>Annual Reports <br/>Anti-ragging</h4>
     <p class="card-text"></p>
   </div>
 </div>
-
-<div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
-  <div class="card-header">HIGHLIGHTS</div>
-  <div class="card-body">
-    <h4 class="card-title">Archive<br/>Notices<br/>Notices to Students<br/>Vittiya Saksharta Abhiyan</h4>
-
-  </div>
-</div>
 <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
   <div class="card-header">ADVERTISEMENTS</div>
   <div class="card-body">
     <h4 class="card-title">PhD/MTech Admissions</h4>
-
   </div>
 </div>
-<div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
-  <div class="card-header"></div>
-  <div class="card-body">
-    <h4 class="card-title"> About NITH</h4>
-
-  </div>
-</div>
-<div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
+<div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
   <div class="card-header">DEPARTMENTS</div>
   <div class="card-body">
     <h4 class="card-title">Computer Science Engg.<br/>Architecture<br/>Electronics<br/>And Many more</h4>
+  </div>
+</div>
 
+</div>
+
+<div class="col-md-6">
+</div>
+
+<div class="col-md-3">
+
+<div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
+  <div class="card-header">HIGHLIGHTS</div>
+  <div class="card-body">
+    <h4 class="card-title">Archive<br/>Notices<br/>Notices to Students<br/>Vittiya Saksharta Abhiyan</h4>
+  </div>
+</div>
+<div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
+  <div class="card-header">About</div>
+  <div class="card-body">
+    <h4 class="card-title"> About NITH</h4>
   </div>
 </div>
 <div class="card text-white bg-info mb-3" style="max-width: 20rem;">
   <div class="card-header">CONTACTS</div>
   <div class="card-body">
     <h4 class="card-title">Directory<br/>More Contacts<br/>01972-254001</h4>
-
   </div>
+</div>
+</div>
+
+</div>
+
+
+
+
 </div>
 </div>
 
