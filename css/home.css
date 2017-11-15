@@ -1,0 +1,5 @@
+.slideshow-placeholder{
+  background-image: url('../images/background.jpg');
+  background-position: center top;
+  background-attachment: fixed;
+}
